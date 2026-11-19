@@ -161,11 +161,13 @@
                 <div class="project-info">
                     <span class="tag">Capstone · In progress · 2026–27</span>
                     <h4>64-Storey Office Tower, Downtown Toronto</h4>
-                    <p>Full structural design and analysis of a 64-storey mixed-use office tower connected to the PATH, with a team of five. I'm developing Structural Scheme Option 1, a concrete shear wall core with perimeter gravity columns, including the ETABS model and core wall design.</p>
+                    <p>Full structural design and analysis of a 64-storey,380m in height, mixed-use office tower connected to the PATH, with a team of five. Acting Technical Lead for Structural Scheme Option 1, a concrete shear wall core with perimeter gravity columns, including the ETABS model, preliminary design of bracing / framing members, shear core, and gravit members.</p>
                     <ul class="bullets">
-                        <li>Compiled dead, superimposed and reduced live loads and building seismic weight for the team's NBCC load cases.</li>
+                        <li>Compiled dead, superimposed and reduced live loads and building seismic weight per NBCC load cases.</li>
                         <li>Preliminary column sizing with a conservative allowance for unsized self-weight.</li>
-                        <li>Compared flat plate, slab with beams and post-tensioned floor systems on thickness, self-weight, punching shear and floor-to-floor height.</li>
+                        <li>Compared various floor systems flat plate, slab with beams and post-tensioned floor systems on thickness, self-weight, punching shear and floor-to-floor height.</li>
+                        <li>Designed preliminary steel framing per CSA S16, considering connection types, framing orentation, and overall weight of floor system to optimze weight of building </li>
+                        <li>Developing Foundation Layout, and integrating new superstructure elements with retained 5-level substructure, evaulating stability and backstay forces. </li>
                     </ul>
                     <a href="./capstone/progress.pdf" target="_blank" class="btn-primary" style="display:inline-block; margin-top:15px;">View Current Progress</a>
                 </div>
@@ -187,22 +189,13 @@
             <!-- STEEL PORTAL FRAME -->
             <div class="project-card academic-breakout spaced">
                 <div class="academic-visuals">
-                    <img src="./images/sap20001.PNG" alt="SAP2000 steel portal frame model">
-                    <img src="./images/sap20002.PNG" alt="SAP2000 force envelopes">
+                    <img src="./images/SAFEMODEL" alt="3D View of Floor System, Modelled in SAFE">
+                    <img src="./images/SAFEMODEL2.PNG" alt="Amount of Reinforcement (Plotted as Env.)">
                 </div>
                 <div class="project-info">
                     <span class="tag">Academic Project</span>
-                    <h4>Steel Portal Frame Analysis and Design</h4>
-                    <p>3D SAP2000 model of a steel portal frame to derive axial, shear and bending moment envelopes. Checked five principal load combinations to find critical members, then used stress ratios to size members economically to CSA S16.</p>
-                </div>
-            </div>
-
-            <!-- BRIDGE GIRDER -->
-            <div class="project-card academic-breakout spaced">
-                <div class="project-info">
-                    <span class="tag">Academic Project</span>
-                    <h4>Bridge Girder Optimization</h4>
-                    <p>Systems project optimizing a steel girder supporting an RC deck slab, applying optimization theory and nonlinear programming through code.</p>
+                    <h4>Reinforced Concrete Design Project (Direct Design Method Vs SAFE Modelling)</h4>
+                    <p>Modelled typical floor where a 2-way slab system needed to be designed under (1) Flat Slab and (2) Slab with beams. Obtaining amount of reinforcement, moment envelopes, and checking punching shear ratios. Using by hand method (Direct Design Method) to develop comparsions between reinforcement design, and distribution of forces.  </p>
                 </div>
             </div>
 
@@ -216,28 +209,6 @@
                     <span class="tag">Academic Project</span>
                     <h4>3D Modelling of the Church and Wellesley Intersection</h4>
                     <p>Remodelled the Church/Wellesley intersection in AutoCAD 3D.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SAMPLE CALCULATION -->
-    <section id="calc" class="calc-section">
-        <div class="container">
-            <h2 class="section-title">Sample Calculation</h2>
-            <div class="calc-card">
-                <div class="calc-text">
-                    <span class="tag">Capstone · Typical floor framing</span>
-                    <h4>Gravity Framing Check, Typical Office Floor</h4>
-                    <p>A hand calculation for a typical floor of the capstone tower, set out the way I'd hand it to a reviewer:</p>
-                    <ol class="calc-steps">
-                        <li><strong>Design basis:</strong> NBCC loads, CSA A23.3, materials and assumptions stated up front.</li>
-                        <li><strong>Loads:</strong> dead, superimposed dead and live loads, with tributary areas.</li>
-                        <li><strong>Load combinations:</strong> 1.4D and 1.25D + 1.5L, governing case identified.</li>
-                        <li><strong>Member design:</strong> flexure, shear and punching shear checks.</li>
-                        <li><strong>Verification:</strong> hand results compared against the ETABS model.</li>
-                    </ol>
-                    <a href="./calcs/capstone-framing-calc.pdf" target="_blank" class="btn-primary">View calculation (PDF)</a>
                 </div>
             </div>
         </div>
@@ -263,7 +234,6 @@
                         <li>NBCC (loads, wind, seismic)</li>
                         <li>CSA A23.3 (Concrete)</li>
                         <li>CSA S16 (Steel)</li>
-                        <li>OPSS 903 (Piling)</li>
                     </ul>
                 </div>
                 <div class="skill-category">
